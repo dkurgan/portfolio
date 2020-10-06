@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background-color: #f6f5f5;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 98vh;
+    width: 98vw;
+}
+.circle-area{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+}
+.side-area{
+    width: 100%;
+    height: 100%;
+}
+.top-bar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:#00334e !important;
+}
+.header{
+    font-size: 2rem;
+    width: 500px;
+    margin-right: 15%;
+}
+.email{
+    width: 500px;
+    font-size: 1.5rem;
+}
+.email i{
+    font-size: 1rem;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border: 3px solid #00334e;
+    border-radius: 50%;
+    animation: spin 17s ease-in-out infinite;
+    margin-top: 8%;
+}
+
+.item-circle{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: #f6f5f5;
+    background: #145374;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 17s ease-in-out infinite reverse;
+}
+
+.links-area{
+    width: 200px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.link{
+    font-size: 4rem;
+    cursor: pointer;
+    color: #ee6f57;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #145374;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.link-animated{
+    animation: blink 3s  infinite;
+}
+.links-area .link:nth-child(2){
+    animation-delay: .4s;
+}
+.links-area .link:nth-child(3){
+    animation-delay: .8s;
+}
+@media screen and (max-width: 790px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 98vw;
+    }
+    .links-area{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .circle{
+        width: 100%;
+        animation: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-circle{
+        top:0px !important;
+        left:0px !important;
+        animation: none;
+        position: relative;
+    }
+}
+@keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+@keyframes blink{
+    0%{
+        border: 0px;
+    }
+    20%{
+        border: 5px solid #145374;
+    }
+    100%{
+        border: 0px
+    }
+}
