@@ -1,7 +1,7 @@
-import React from 'react';
 import LinksArea from './LinksArea';
 import ProjectsCircle from './ProjectsCircle';
 import TopBar from './TopBar';
+import * as React from 'react';
 
 export const LandingPage = () => {
     return (

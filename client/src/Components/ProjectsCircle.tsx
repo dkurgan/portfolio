@@ -1,5 +1,5 @@
-import React from 'react';
 import { openNewTab } from '../helpes/openNewTab';
+import * as React from 'react';
 
 export default class ProjectsCircle extends React.Component {
     state = {spinCircle: "running", spinItem: "running"}
@@ -25,21 +25,21 @@ export default class ProjectsCircle extends React.Component {
     }
     render() {
         const { spinItem, spinCircle } = this.state;
-        return (
+        return <>{
             <div className={`circle`} style={{ animationPlayState: `${spinCircle}` }} onMouseLeave={() => {
-                this.setState({spinCircle: "running", spinItem: "running"})
+                this.setState({ spinCircle: "running", spinItem: "running" })
             }}
                 onMouseOver={() => { this.setState({ spinCircle: "paused", spinItem: "paused" }) }}>
-                <div id="0" className={`item-circle`} style={{top: "177px", left: "427px", animationPlayState: spinItem}} onClick={()=> openNewTab("https://hooney.herokuapp.com/")}>
+                <div id="0" className={`item-circle`} style={{ top: "177px", left: "427px", animationPlayState: spinItem }} onClick={() => openNewTab("https://hooney.herokuapp.com/")}>
                     <p>Camagru</p>
                 </div>
-                <div id="1" className={`item-circle`} style={{top: "394px", left: "52px", animationPlayState: spinItem}} onClick={()=> openNewTab("https://twentyfiveofus.herokuapp.com/")}>
+                <div id="1" className={`item-circle`} style={{ top: "394px", left: "52px", animationPlayState: spinItem }} onClick={() => openNewTab("https://twentyfiveofus.herokuapp.com/")}>
                     <p>TwentyFiveOfUs</p>
                 </div>
-                <div id="2" className={`item-circle`} style={{ top: "-40px", left: "52px", animationPlayState: spinItem }} onClick={()=> openNewTab("https://github.com/dkurgan/matcha")}>
+                <div id="2" className={`item-circle`} style={{ top: "-40px", left: "52px", animationPlayState: spinItem }} onClick={() => openNewTab("https://github.com/dkurgan/matcha")}>
                     <p>Matcha</p>
                 </div>
             </div>
-        )
+        }</>
     }
 }
