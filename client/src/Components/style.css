@@ -105,33 +105,49 @@ body{
     animation-delay: .8s;
 }
 @media screen and (max-width: 790px){
+    body{
+        width: 99% !important;
+    }
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 98vw;
+        width: 100%;
     }
     .links-area{
-        width: 100%;
+        width: 95%;
         align-items: center;
         justify-content: center;
         margin-top: 100px;
     }
     .circle{
-        width: 100%;
+        width: 95%;
         animation: none;
         border: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100% !important;
     }
     .item-circle{
         top:0px !important;
         left:0px !important;
         animation: none;
         position: relative;
+    }
+    .email{
+        display: none;
+    }
+    .header-container{
+        width: 95%;
+    }
+    .header{
+        margin-top: 15px;
+        display: flex;
+        justify-content:center ;
+        width: 95%;
     }
 }
 @keyframes spin {
