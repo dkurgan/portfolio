@@ -18,7 +18,7 @@ export default class ProjectsCircle extends React.Component {
             angle += step;
            cords = [...cords, [x, y]]
         }
-        console.log({cords});
+        // console.log({cords});
     }
     componentDidMount() {
         this.callculatePos();

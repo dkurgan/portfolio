@@ -16,7 +16,7 @@ export default class LinksArea extends React.Component{
                     <p><i className="fab fa-github"></i></p>
                 </div>
                 <div className={`link ${animation}`}>
-                    <a download href={'/files/DanilaKurgan.pdf'}><i className="fas fa-file"></i></a>
+                    <div onClick={()=> openNewTab('/portfolio/files/DanilaKurgan.pdf')}><i className="fas fa-file"></i></div>
                 </div>
             </div>
         }</>
