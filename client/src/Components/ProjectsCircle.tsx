@@ -30,7 +30,7 @@ export default class ProjectsCircle extends React.Component {
                 this.setState({ spinCircle: "running", spinItem: "running" })
             }}
                 onMouseOver={() => { this.setState({ spinCircle: "paused", spinItem: "paused" }) }}>
-                <div id="0" className={`item-circle`} style={{ top: "177px", left: "427px", animationPlayState: spinItem }} onClick={() => openNewTab("https://hooney.herokuapp.com/")}>
+                <div id="0" className={`item-circle`} style={{ top: "177px", left: "427px", animationPlayState: spinItem }} onClick={() => openNewTab("https://github.com/dkurgan/Hooney")}>
                     <p>Hooney</p>
                 </div>
                 <div id="1" className={`item-circle`} style={{ top: "394px", left: "52px", animationPlayState: spinItem }} onClick={() => openNewTab("https://twentyfiveofus.herokuapp.com/")}>
