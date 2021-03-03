@@ -33,7 +33,7 @@ export default class ProjectsCircle extends React.Component {
                 <div id="0" className={`item-circle`} style={{ top: "177px", left: "427px", animationPlayState: spinItem }} onClick={() => openNewTab("https://github.com/dkurgan/Hooney")}>
                     <p>Hooney</p>
                 </div>
-                <div id="1" className={`item-circle`} style={{ top: "394px", left: "52px", animationPlayState: spinItem }} onClick={() => openNewTab("https://twentyfiveofus.herokuapp.com/")}>
+                <div id="1" className={`item-circle`} style={{ top: "394px", left: "52px", animationPlayState: spinItem }} onClick={() => openNewTab("https://github.com/dkurgan/25ofUsStore")}>
                     <p>TwentyFiveOfUs</p>
                 </div>
                 <div id="2" className={`item-circle`} style={{ top: "-40px", left: "52px", animationPlayState: spinItem }} onClick={() => openNewTab("https://github.com/dkurgan/matcha")}>
